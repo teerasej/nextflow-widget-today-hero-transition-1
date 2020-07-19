@@ -74,12 +74,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
               ));
             },
-            leading: Hero(
-              tag: 'course_${course.name}',
-              child: Image(
-                image: AssetImage(course.imageLocation),
-                fit: BoxFit.scaleDown,
-              ),
+            leading: Image(
+              image: AssetImage(course.imageLocation),
+              fit: BoxFit.scaleDown,
             ),
             title: Text(course.name),
           );

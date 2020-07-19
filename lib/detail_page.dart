@@ -15,11 +15,8 @@ class DetailPage extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Hero(
-            tag: 'course_${course.name}',
-            child: Image(
-              image: AssetImage(course.imageLocation),
-            ),
+          Image(
+            image: AssetImage(course.imageLocation),
           ),
           SizedBox(
             height: 10,
